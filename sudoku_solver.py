@@ -18,7 +18,6 @@ def solve(bo):
     return False
 
 def is_valid(bo, num, pos):
-
     # Check row
     for i in range(len(bo[0])):
         if bo[pos[0]][i] == num and pos[1] != i:
@@ -57,6 +56,7 @@ def find_empty(board):
                 return (i, j)
     return None
 
+# Makes a solvable board
 def make_board(m=3):
     """Return a random filled m**2 x m**2 Sudoku board."""
     n = m**2
