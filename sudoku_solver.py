@@ -83,6 +83,7 @@ def make_board(m=3):
 
     return search()
 
+# Removes some slots to create puzzle
 def createPuzzle(board):
     side = 9
     squares = side * side
